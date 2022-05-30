@@ -1,5 +1,10 @@
 # title(){return this.options.title||this.options.name}
 
+My journey to learn Reactjs...
+After the basics I managed to begin the first project supported by Scrimba.
+This project is a little info site.
+The Youtube video I watched to learn is: https://www.youtube.com/watch?v=bMknfKXIFA8&ab_channel=freeCodeCamp.org
+
 ## Supporting Scrimba
 
 Since 2017, we have created over 20 free courses on Scrimba, and we're going to
