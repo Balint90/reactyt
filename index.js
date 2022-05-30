@@ -196,19 +196,33 @@ function Header() {
     )
 }
 
-function Page_CH14() {
+function MainContent() {
     return (
-        <div className="mt-3 ms-3 mb-3">
-            <Header />
+        <div>
             <h1 className="mt-3 mb-3">Reasons I am excited to learn React</h1>
             <ul className="fs-3 text fw-bold ms-4">
                 <li>I hope I will be more productive if I could learn it</li>
                 <li>This is an Imperative language</li>
                 <li>Will make JS coding faster</li>
             </ul>
-            <footer>
+        </div>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>
                 <small>© 2022 Balint development. All rights reserved.</small>
             </footer>
+    )
+}
+
+function Page_CH14() {
+    return (
+        <div className="mt-3 ms-3 mb-3">
+            <Header />
+            <MainContent />
+            <Footer />
         </div>
     )
 }
