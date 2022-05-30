@@ -186,14 +186,20 @@ Part 2:
 
  */
 
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
 function Page_CH14() {
     return (
         <div className="mt-3 ms-3 mb-3">
-            <header>
-                <nav>
-                    <img src="./react-logo.png" width="40px" />
-                </nav>
-            </header>
+            <Header />
             <h1 className="mt-3 mb-3">Reasons I am excited to learn React</h1>
             <ul className="fs-3 text fw-bold ms-4">
                 <li>I hope I will be more productive if I could learn it</li>
