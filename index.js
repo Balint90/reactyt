@@ -186,19 +186,49 @@ Part 2:
 
  */
 
+/**
+Challenge: 
+
+- Add an `ul` inside the Header's `nav` and create
+    the following `li`s: "Pricing", "About", & "Contact"
+*/ 
+
+function Navbar() {
+    return (
+        <nav className="navbar shadow pt-3 ps-3 pb-3 pe-3 navbar-expand-lg navbar-light bg-light">
+            <img src="./react-logo.png" width="60px" />
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto">
+                <li className="nav-item active">
+                    <a className="nav-link" href="#">Pricing <span className="sr-only">(current)</span></a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">About</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    )
+}
+
 function Header() {
     return (
         <header>
-            <nav>
-                <img src="./react-logo.png" width="40px" />
-            </nav>
+            <Navbar />
         </header>
     )
 }
 
 function MainContent() {
     return (
-        <div>
+        <div className="mt-3 ms-3 mb-3">
             <h1 className="mt-3 mb-3">Reasons I am excited to learn React</h1>
             <ul className="fs-3 text fw-bold ms-4">
                 <li>I hope I will be more productive if I could learn it</li>
@@ -211,15 +241,15 @@ function MainContent() {
 
 function Footer() {
     return (
-        <footer>
-                <small>© 2022 Balint development. All rights reserved.</small>
-            </footer>
+        <footer className="fixed-bottom p-4 bg-dark text-white">
+            <small>© 2022 Balint development. All rights reserved.</small>
+        </footer>
     )
 }
 
 function Page_CH14() {
     return (
-        <div className="mt-3 ms-3 mb-3">
+        <div>
             <Header />
             <MainContent />
             <Footer />
