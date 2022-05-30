@@ -5,6 +5,8 @@ After the basics I managed to begin the first project supported by Scrimba.
 This project is a little info site.
 The Youtube video I watched to learn is: https://www.youtube.com/watch?v=bMknfKXIFA8&ab_channel=freeCodeCamp.org
 
+I managed to use Bootstrap v5.2 with react and use those together to make a more beautiful project.
+
 ## Supporting Scrimba
 
 Since 2017, we have created over 20 free courses on Scrimba, and we're going to
