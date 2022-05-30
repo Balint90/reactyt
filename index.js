@@ -117,18 +117,94 @@ function MainContent() {
 // document.getElementById("root").append(page_elem3)
 // document.getElementById("root").append(page_elem4)
 
-const page2 = (
-    <div className="mt-3 ms-3 mb-3">
-        <img src="./react-logo.png" width="40" />
-        <h1 className="mt-3 mb-3">Fun facts about react</h1>
-        <ul className="fs-3 text fw-bold ms-4">
-            <li>Was released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100k stars on Github</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </div>
-    )
+//Challenge - Project 1 part 1 - Markup
+//11. Build a React Info site 49:59 in video
 
-ReactDOM.render(page2, document.getElementById("root"));
+// const page2 = (
+//     <div className="mt-3 ms-3 mb-3">
+//         <img src="./react-logo.png" width="40px" />
+//         <h1 className="mt-3 mb-3">Fun facts about react</h1>
+//         <ul className="fs-3 text fw-bold ms-4">
+//             <li>Was released in 2013</li>
+//             <li>Was originally created by Jordan Walke</li>
+//             <li>Has well over 100k stars on Github</li>
+//             <li>Is maintained by Facebook</li>
+//             <li>Powers thousands of enterprise apps, including mobile apps</li>
+//         </ul>
+//     </div>
+//     )
+
+// ReactDOM.render(page2, document.getElementById("root"));
+
+//12. Build a React Info site
+//Pop Quiz! 
+//54:44 in video
+//quiz.md
+
+/**
+13. Challenge: 
+
+Part 1: Create a page of your own using a custom Page component
+
+It should return an ordered list with the reasons why you're
+excited to be learning React :)
+
+Render your list to the page
+
+ */
+
+// function Page_Comp() {
+//     return (
+//         <div>
+//             <h1>Why am I excited to learn React?</h1>
+//             <ul>
+//                 <li>I hope I will be more productive if I could learn it</li>
+//                 <li>This is an Imperative language</li>
+//                 <li>Will make JS coding faster</li>
+//             </ul>
+//         </div>
+//     )
+// }
+
+// ReactDOM.render(< Page_Comp />, document.getElementById("root"));
+
+// 14. Build a React Info site
+//Custom components part 2
+
+/**
+Challenge: 
+
+Part 2: 
+- Add a `header` element with a nested `nav` element. Inside the `nav`,
+    include a `img` element with the image of the React logo inside
+    (src="./react-logo.png") and make sure to set the width to something
+    more manageable so it doesn't take up the whole screen
+- Add an `h1` with some text describing the page. (E.g. "Reasons
+    I'm excited to learn React"). Place it above the ordered list.
+- Add a `footer` after the list that says: 
+    "© 20xx <last name here> development. All rights reserved."
+
+ */
+
+function Page_CH14() {
+    return (
+        <div className="mt-3 ms-3 mb-3">
+            <header>
+                <nav>
+                    <img src="./react-logo.png" width="40px" />
+                </nav>
+            </header>
+            <h1 className="mt-3 mb-3">Reasons I am excited to learn React</h1>
+            <ul className="fs-3 text fw-bold ms-4">
+                <li>I hope I will be more productive if I could learn it</li>
+                <li>This is an Imperative language</li>
+                <li>Will make JS coding faster</li>
+            </ul>
+            <footer>
+                <small>© 2022 Balint development. All rights reserved.</small>
+            </footer>
+        </div>
+    )
+}
+
+ReactDOM.render(<Page_CH14 />, document.getElementById("root"))
